@@ -18,6 +18,8 @@ git clone https://github.com/ryaino/Backend-Quickstart.git
 mv Backend-Quickstart $KEBAB_NAME
 cd $KEBAB_NAME
 
+git clone https://github.com/ryaino/frontend.git
+
 sed -i -e "s/BackendQuickstart/${ORIGINAL_NAME}/g" src/main/java/field/ryan/backendquickstart/BackendQuickstartApplication.java
 find ./ -type f -exec sed -i -e "s/backendquickstart/${LOWERCASE_NAME}/g" {} \;
 sed -i -e "s/backend-quickstart/${KEBAB_NAME}/g" docker-compose.yml
