@@ -2,6 +2,8 @@
 ```bash
 git clone https://github.com/ryaino/Personal-Scripts.git ~/setup-stuff
 ln -s ~/setup-stuff/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/setup-stuff/.dotfiles/.spaceshiprc.zsh ~/.spaceshiprc.zsh
+
 ```
 
 
