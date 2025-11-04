@@ -17,6 +17,7 @@ SPACESHIP_PROMPT_ORDER=(
   user
   dir
   git
+  gcloud
   docker_compose
   line_sep
   char

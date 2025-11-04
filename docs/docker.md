@@ -32,3 +32,7 @@ sudo systemctl enable --now docker
 ```
 sudo docker run hello-world
 ```
+```
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+```
