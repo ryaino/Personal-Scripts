@@ -28,6 +28,6 @@ resource "docker_container" "homepage" {
         container_path = "/var/run/docker.sock"
   }
   env = [
-    "HOMEPAGE_ALLOWED_HOSTS=gethomepage.dev"
+    "HOMEPAGE_ALLOWED_HOSTS=*",
   ]
 }
