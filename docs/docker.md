@@ -27,12 +27,10 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 
 ```
 sudo systemctl enable --now docker
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 
 ```
 sudo docker run hello-world
-```
-```
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
 ```
