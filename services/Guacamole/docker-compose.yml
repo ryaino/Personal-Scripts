@@ -42,9 +42,9 @@ volumes:
    dbdata:
     
 networks:
-   guac-net:
+  guac-net:
       driver: bridge
-      ipam:
-         driver: default
-         config:
-          subnet: "172.30.0.0/16"
+  ipam:
+      driver: default
+      config:
+      subnet: "172.30.0.0/16"
