@@ -30,4 +30,7 @@ resource "docker_container" "homepage" {
   env = [
     "HOMEPAGE_ALLOWED_HOSTS=*",
   ]
+  networks_advanced {
+    name = "caddy"
+  }
 }

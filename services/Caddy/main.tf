@@ -12,6 +12,11 @@ resource "docker_image" "caddy" {
   keep_locally = false
 }
 
+resource "docker_network" "caddy" {
+  name = "caddy"
+  internal = false
+}
+
 resource "docker_container" "caddy" {
   image = docker_image.caddy.image_id
   restart = "unless-stopped"
