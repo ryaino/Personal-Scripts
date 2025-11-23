@@ -55,4 +55,7 @@ resource "docker_container" "caddy" {
     volume_name = "caddy_config"
     container_path = "/config"
   }
+  networks_advanced {
+    name = "caddy"
+  }
 }
