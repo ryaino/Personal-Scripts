@@ -8,7 +8,7 @@
         description: Homepage is awesome
 
 - My Second Group:
-    - My uwu Service:
+    - My hello Service:
         href: http://localhost/
         description: Homepage is the best
 
@@ -16,3 +16,9 @@
     - My Third Service:
         href: http://localhost/
         description: Homepage is 😎
+
+- Group A:
+    - Caddy:
+        href: localhost:2019
+        description: Caddy reverse proxy
+        container: caddy

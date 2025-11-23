@@ -15,3 +15,7 @@ module "homepage" {
   source = "./services/Homepage"
 }
 
+module "caddy" {
+  source = "./services/Caddy"
+}
+
