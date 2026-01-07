@@ -1,5 +1,7 @@
 /services/Homepage/config/logs
 
+/services/Pi-hole/etc-pihole
+
 
 terraform.tfstate.backup
 **/.terraform
@@ -7,3 +9,5 @@ terraform.tfstate.backup
 terraform.tfstate
 
 .terraform.lock.hcl
+
+services/Actual/actual-data/

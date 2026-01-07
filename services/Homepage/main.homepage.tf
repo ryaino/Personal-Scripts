@@ -9,12 +9,13 @@ terraform {
 
 resource "docker_image" "homepage" {
   name         = "ghcr.io/gethomepage/homepage:latest"
-  keep_locally = false
+  keep_locally = true
 }
 
 resource "docker_container" "homepage" {
   image = docker_image.homepage.image_id
   name  = "homepage"
+  restart = "unless-stopped"
   ports {
     internal = 3000
     external = 3000
@@ -30,7 +31,8 @@ resource "docker_container" "homepage" {
   env = [
     "HOMEPAGE_ALLOWED_HOSTS=*",
   ]
-  networks_advanced {
-    name = "caddy"
+  labels {
+    label = "traefik.http.routers.homepage.rule"
+    value = "Host(`homepage.localhost`)"
   }
 }

@@ -9,7 +9,7 @@ terraform {
 
 resource "docker_image" "caddy" {
   name         = "caddy:2.10.2"
-  keep_locally = false
+  keep_locally = true
 }
 
 resource "docker_network" "caddy" {

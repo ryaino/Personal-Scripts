@@ -17,8 +17,13 @@
         href: http://localhost/
         description: Homepage is 😎
 
-- Group A:
-    - Caddy:
-        href: localhost:2019
-        description: Caddy reverse proxy
-        container: caddy
+- Services:
+    - Actual:
+        href: http://actual.localhost
+        description: Actual budgeting
+        container: actual
+    - Traefik:
+        href: http://localhost:8080
+        description: Traefik Dashboard
+        container: traefik
+

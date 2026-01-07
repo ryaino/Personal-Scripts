@@ -15,7 +15,14 @@ module "homepage" {
   source = "./services/Homepage"
 }
 
-module "caddy" {
-  source = "./services/Caddy"
+# module "caddy" {
+#   source = "./services/Caddy"
+# }
+
+module "actual" {
+  source = "./services/Actual"
 }
 
+module "traefik" {
+    source = "./services/Traefik"
+}
